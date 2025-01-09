@@ -1,0 +1,3 @@
+INSERT INTO customers (first_name, last_name, email, phone, address1, address2, city, state, zip, notes, active, created_at, updated_at)
+VALUES ('John', 'Doe', 'johndoe@example.com', '123-456-7890', '123 Main St', 'Apt 4B', 'New York', 'NY', 10001, 'Customers since 2020', true, now(), now()),
+('Jane', 'Smith', 'janesmith@example.com', '987-654-3210', '456 Oak Drive', NULL, 'Los Angeles', 'CA', 90001, 'VIP Customer', true, now(), now())

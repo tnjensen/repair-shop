@@ -1,6 +1,9 @@
-import { HomeIcon, File, UsersRound } from "lucide-react";
+import { HomeIcon, File, UsersRound, LogOut } from "lucide-react";
 import Link from "next/link";
+import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
+import { Button } from "./ui/button";
 import { ModeToggle } from "./ModeToggle";
+import { NavButtonMenu } from "./NavButtonMenu";
 
 export function Header() {
   return (
@@ -27,17 +30,38 @@ export function Header() {
             <File />
             <h1 className="hidden sm:block text-xl font-bold m-0 mt-1">
             </h1>
-          </Link>
-          <Link
+        </Link>
+        <Link
             href="/customers"
             className="flex justify-center items-center gap-2 ml-0"
             title="Customers"
           >
-            <UsersRound />
+            {/* <UsersRound /> */}
+            <NavButtonMenu
+            icon={UsersRound}
+            label="Customers Menu"
+            choices={[
+              {title: "Search Customers", href: "/customers"}, 
+              {title: "New Customer", href: "/customers/form"}, 
+            ]} 
+          />
             <h1 className="hidden sm:block text-xl font-bold m-0 mt-1">
             </h1>
           </Link>
+          
           <ModeToggle />
+          <Button
+            variant="ghost"
+            size="icon"
+            aria-label="LogOut"
+            title="LogOut"
+            className="rounded-full"
+            asChild
+          >
+            <LogoutLink>
+              <LogOut />
+            </LogoutLink>
+          </Button>
         </div>
       </div>
     </header>
