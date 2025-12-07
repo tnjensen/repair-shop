@@ -1,7 +1,7 @@
-1. [ ] Replace current sticky note system
+1. [x] Replace current sticky note system
 2. [x] Add a public facing page with basic contact info
 3. [x] Add a passwordless employee login to the app
-4. [ ] Show a real-time open tickets page after login
+4. [x] Show a real-time open tickets page after login
 5. [x] Provide easy navigation & search for customers & tickets
 6. [x] Provide a logout option
 7. [x] Require users to log in at least once a week
@@ -15,6 +15,6 @@
 15. [x] All users can create, edit and view customers
 16. [x] Employees can only edit their assigned tickets
 17. [x] Managers and Admins can view, edit and complete all tickets
-18. [ ] Desktop mode is most important but the app be usable on tablet
+18. [x] Desktop mode is most important but the app be usable on tablet
 19. [x] Light/Dark mode requested by employees
 20. [x] Expects quick support if anything goes wrong

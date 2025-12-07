@@ -4,6 +4,7 @@ import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
 import { Button } from "./ui/button";
 import { ModeToggle } from "./ModeToggle";
 import { NavButtonMenu } from "./NavButtonMenu";
+import { NavButton } from "./NavButton";
 
 export function Header() {
   return (
@@ -11,9 +12,9 @@ export function Header() {
       <div className="flex h-8 items-center justify-between w-full">
         <div className="flex items-center gap-2">
           <Link
-            href="/home"
+            href="/tickets"
             className="flex justify-center items-center gap-2 ml-0"
-            title="Home"
+            title="Tickets"
           >
             <HomeIcon />
             <h1 className="hidden sm:block text-xl font-bold m-0 mt-1">
@@ -27,7 +28,7 @@ export function Header() {
             className="flex justify-center items-center gap-2 ml-0"
             title="Tickets"
           >
-            <File />
+            <File className="w-5" />
             <h1 className="hidden sm:block text-xl font-bold m-0 mt-1">
             </h1>
         </Link>

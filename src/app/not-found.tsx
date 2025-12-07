@@ -19,7 +19,9 @@ export default function NotFound() {
                 priority={true}
                 title='Page not found'
             />
-            <Link href='/home' className='py-4'>Return Home</Link>
+            <Link href='/tickets' className='text-center hover-underline py-4'>
+            <h3>Return Home</h3>
+            </Link>
         </div>
         
     </div>

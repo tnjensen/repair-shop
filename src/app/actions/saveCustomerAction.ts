@@ -73,11 +73,11 @@ export const saveCustomerAction = actionClient
           email: customer.email,
           phone: customer.phone,
           address1: customer.address1,
-          address2: customer.address2?.trim() || null,
+          address2: customer.address2?.trim() ?? null,
           city: customer.city,
           state: customer.state,
           zip: customer.zip,
-          notes: customer.notes?.trim() || null,
+          notes: customer.notes?.trim() ?? null,
         })
         .where(eq(customers.id, customer.id!))
         .returning({ updatedId: customers.id });
